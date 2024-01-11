@@ -1,4 +1,4 @@
-To implement the face recognition attendance system, two files are needed: one for the server-side and one for the client-side. 
+To implement the face recognition attendance system, two folder are needed: one for the server-side and one for the client-side. 
 
 ---------------------------------------------------------------------------------------------
 If you want the mongoUrl to connect to your own database, you can follow these steps:
