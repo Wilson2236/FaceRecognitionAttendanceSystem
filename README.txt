@@ -1,6 +1,3 @@
-Name: Ooi Wei Sheng
-ID: 20204891
-
 To implement the face recognition attendance system, two files are needed: one for the server-side and one for the client-side. 
 
 ---------------------------------------------------------------------------------------------
@@ -23,7 +20,8 @@ If you choose to use the original database specified in the file, you can skip t
 1. Open two windows in your editor.
 2. One window should be for the server-side folder and the other for the client-side folder.
 3. Open the terminal for both windows.
-4. In the terminal for the client-side window, type "npm start." 
-5. In the terminal for the server-side window, type "nodemon app"
+4. In the terminal for the client-side and server-side window, type "npm install." 
+5. In the terminal for the client-side window, type "npm start." 
+6. In the terminal for the server-side window, type "nodemon app"
 
 ---------------------------------------------------------------------------------------------
