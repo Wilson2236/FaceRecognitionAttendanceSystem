@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* center all components */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* set the height to full viewport height */
+        font-weight: 500;
+        font-family: "Fira Sans", sans-serif;
+        background-color: #17cf97;
+      }
+
+      
+      input[type="password"] {
+        width: 300px; /* set the width to 300 pixels */
+        font-size: 16px; /* increase the font size for better readability */
+        padding: 10px; /* add some padding to the input box */
+      }
+
+
+      input[type="submit"] {
+    background-color: #167bff; /* set the background color */
+    color: white; /* set the text color */
+    padding: 12px 20px; /* set the padding */
+    border: none; /* remove the border */
+    border-radius: 4px; /* add some border radius */
+    cursor: pointer; /* change the cursor to a pointer on hover */
+    margin-top: 10px;
+  }
+
+  /* change the color of the button on hover */
+  input[type="submit"]:hover {
+    background-color: #006eff;
+    
+  }
+    </style>
+    <script>
+      var status = '<%- JSON.stringify(status) %>';
+      if (JSON.parse(status) == "verified") {
+        if (confirm("Do u want to login?")) {
+          window.location.href = "http://localhost:3000/";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Account: <%= email%></h1>
+      <form action="" method="post">
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        /><br />
+        <input type="submit" value="Reset Password" />
+      </form>
+    </div>
+  </body>
+</html>
