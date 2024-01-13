@@ -13,13 +13,13 @@ export default function SignUp() {
   const attendance = 0
 
   const handleSubmit = (e) => {
-    if (userType == "Admin" && secretKey != "MADE BY OWS") {
+    if (userType === "Admin" && secretKey != "MADE BY OWS") {
       e.preventDefault();
       alert("Invalid Admin");
     } else {
       e.preventDefault();
       let body;
-      if (userType == "Admin") {
+      if (userType === "Admin") {
         body = JSON.stringify({
           fname,
           lname,
@@ -54,13 +54,13 @@ export default function SignUp() {
         .then((res) => res.json())
         .then((data) => {
           console.log(data, "userRegister");
-          if (data.status == "ok") {
+          if (data.status === "ok") {
             alert("Registration Successful");
           }
-          else if (data.status == "401"){
+          else if (data.status === "401"){
             alert("Password must be at least 8 characters long")
           } 
-          else if (data.status == "402"){
+          else if (data.status === "402"){
             alert("Password must contain at least one letter and one number")
           }
           else {
@@ -94,7 +94,7 @@ export default function SignUp() {
             />
             <label>Admin</label>
           </div>
-          {userType == "Admin" ? (
+          {userType === "Admin" ? (
             <div className="mb-3">
               <label>Secret Key</label>
               <input
