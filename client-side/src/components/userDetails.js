@@ -24,7 +24,7 @@ export default function UserDetails () {
     })
     .then((res)=>res.json())
     .then((data)=>{
-      if(data.data.userType == "Admin")
+      if(data.data.userType === "Admin")
         setAdmin(true)
 
         setUserData(data.data);
