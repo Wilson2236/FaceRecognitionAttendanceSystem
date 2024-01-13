@@ -17,11 +17,13 @@ Build your cluster.
 
 If you choose to use the original database specified in the file, you can skip the steps outlined above, but you will not be able to view the database activity.
 
-1. Open two windows in your editor.
-2. One window should be for the server-side folder and the other for the client-side folder.
-3. Open the terminal for both windows.
-4. In the terminal for the client-side and server-side window, type "npm install." 
-5. In the terminal for the client-side window, type "npm start." 
-6. In the terminal for the server-side window, type "nodemon app"
+1. Follow the instruction in https://docs.npmjs.com/downloading-and-installing-node-js-and-npm.
+2. Downloading and Installing Node.js and npm. 
+3. Open two windows in your editor.
+4. One window should be for the server-side folder and the other for the client-side folder.
+5. Open the terminal for both windows.
+6. In the terminal for the client-side and server-side window, type "npm install." 
+7. In the terminal for the client-side window, type "npm start." 
+8. In the terminal for the server-side window, type "nodemon app"
 
 ---------------------------------------------------------------------------------------------
