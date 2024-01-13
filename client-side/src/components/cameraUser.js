@@ -84,7 +84,7 @@ function App() {
         alert("Click Clear Image and Try Again in the Well-lit Environment")
       }
 
-      if(data.status == "ok"){
+      if(data.status === "ok"){
         alert("Images are uploaded successfully")
       }
       console.log("Image uploaded", data);
