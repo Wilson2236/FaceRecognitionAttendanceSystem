@@ -35,30 +35,6 @@ function App() {
         
   }
 
-  // const resetState = () => {
-  //     try {
-  //       fetch("http://localhost:5000/reset", {
-  //         method: "POST",
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //           Accept: "application/json",
-  //           "Authorization": "Bearer "+ window.localStorage.getItem("token"),
-  //           "Access-Control-Allow-Origin":"*",
-  //         },
-    
-  //         body: JSON.stringify({
-
-  //         })
-  //       })
-  //       alert("Successfully reset")
-  //       getSign()
-  //     }
-  //     catch (error) {
-  //       alert("Error : " + error.message);
-  //     } 
-        
-  // }
-
   const closePhoto = () => {
     let photo = canvasRef.current;
     let ctx = photo.getContext("2d");
