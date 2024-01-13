@@ -13,7 +13,7 @@ export default function SignUp() {
   const attendance = 0
 
   const handleSubmit = (e) => {
-    if (userType === "Admin" && secretKey != "MADE BY OWS") {
+    if (userType === "Admin" && secretKey !== "MADE BY OWS") {
       e.preventDefault();
       alert("Invalid Admin");
     } else {
