@@ -50,7 +50,7 @@ function App() {
             <ul id = "navbar">
               <li><a onClick={LogOuttoSignUp}>Sign Up</a></li>
               <li><a onClick={LogOuttoSignIn}>Sign in</a></li>
-              {isLoggedIn == "true" ? (
+              {isLoggedIn === "true" ? (
               <li><a onClick={userDetails}>User Details</a></li>
               ) : null}
               {isLoggedIn === "true"? (
@@ -67,7 +67,7 @@ function App() {
         <div className="auth-wrapper">
           <div className="auth-inner">
             <Routes>
-              <Route exact path="/" element={isLoggedIn=="true"? <UserDetails/>:<Login/> }
+              <Route exact path="/" element={isLoggedIn==="true"? <UserDetails/>:<Login/> }
               />
               <Route path="/sign-in" element={<Login />} />
               <Route path="/sign-up" element={<SignUp />} />
