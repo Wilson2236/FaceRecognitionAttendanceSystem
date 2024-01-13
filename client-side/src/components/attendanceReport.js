@@ -1,6 +1,6 @@
 // Based on the authentication, the system determines whether to display the user details page for the user or admin.
 
-import React, {Component,useState, useEffect} from "react";
+import React, {useState, useEffect} from "react";
 
 import AttendanceReportAdmin from "./attendanceReportAdmin";
 import AttendanceReportUser from "./attendanceReportUser";
