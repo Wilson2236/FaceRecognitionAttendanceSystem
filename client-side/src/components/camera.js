@@ -22,8 +22,6 @@ export default function UserDetails () {
     })
     .then((res)=>res.json())
     .then((data)=>{
-
-      //  this.setState({userData: data.data});
       if(data.data.userType ==="Admin")
         setAdmin(true)
     });
