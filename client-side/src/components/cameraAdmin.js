@@ -173,7 +173,7 @@ function App() {
           throw new Error(data.error.message);
         }
         console.log("Face", data);
-        if(data.status=="403"){
+        if(data.status=== "403"){
           alert("This user is sign-in today!");
         }
 
