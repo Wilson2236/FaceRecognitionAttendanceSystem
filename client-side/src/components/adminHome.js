@@ -61,7 +61,7 @@ export default function AdminHome (){
                 </tr>
                 </thead>
                 <tbody>
-                {data.filter(i => i.userType == "User").map(i=> {
+                {data.filter(i => i.userType === "User").map(i=> {
                     return(
                         <tr key={i.email}>
                             <td>{i.fname} {i.lname}</td>
